@@ -71,18 +71,5 @@ public class LinkedList {
         return list;
     }
 
-    public static void main(String []args) {
-        LinkedList names = new LinkedList();
-        names.addToHead("Anna");
-        names.addToTail("David");
-        names.addToTail("Emily");
-        names.addToTail("Igor");
-        names.addToTail("Kate");
-        names.addToTail("Ricky");
-        System.out.println(names);
-        names.removeTail();
-        names.removeHead();
-        System.out.println(names);
-    }
 
 }
