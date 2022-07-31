@@ -13,6 +13,7 @@ public class LinkedList {
         else{
             Node currentHead = new Node(data);
             currentHead.setNextNode(this.head);
+            this.head = currentHead;
         }
     }
 

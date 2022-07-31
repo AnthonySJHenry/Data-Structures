@@ -1,4 +1,4 @@
-public class DoublyLinkedList {
+public class DoublyLinkedList<E> {
     Node head;
     Node tail;
     public DoublyLinkedList(){
@@ -64,7 +64,7 @@ public class DoublyLinkedList {
 
     }
 
-    public Boolean remove(String str){
+    public Boolean remove(E str){
         if(str == this.head.data){
             this.removeHead();
             return true;
@@ -101,26 +101,26 @@ public class DoublyLinkedList {
         return list;
     }
 
-    public static void main(String []args) {
-        DoublyLinkedList names = new DoublyLinkedList();
-
-        names.addToTail("David");
-        names.addToTail("Emily");
-        names.addToTail("Igor");
-        names.addToTail("Kate");
-        names.addToTail("Ricky");
-        names.addToHead("Anna");
-        names.addToHead("Alex");
-        names.addToHead("Adele");
-        names.addToTail("Sally");
-
-        System.out.println(names);
-        names.removeTail();
-        names.removeHead();
-        System.out.println(names);
-        names.remove("Emily");
-        System.out.println(names);
-
-    }
+//    public static void main(String []args) {
+//        DoublyLinkedList<String> names = new DoublyLinkedList();
+//
+//        names.addToTail("David");
+//        names.addToTail("Emily");
+//        names.addToTail("Igor");
+//        names.addToTail("Kate");
+//        names.addToTail("Ricky");
+//        names.addToHead("Anna");
+//        names.addToHead("Alex");
+//        names.addToHead("Adele");
+//        names.addToTail("Sally");
+//
+//        System.out.println(names);
+//        names.removeTail();
+//        names.removeHead();
+//        System.out.println(names);
+//        names.remove("Emily");
+//        System.out.println(names);
+//
+//    }
 
 }
